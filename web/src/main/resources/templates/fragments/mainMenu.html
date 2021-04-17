@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Main menu</title>
+</head>
+<body>
+
+<div th:fragment="main-menu">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="/index"><img src="pic/smart-house-26x26.png" alt=""></a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Electricity</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Heating</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/water_supply">Water supply</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Watering
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="/watering_land">Land</a>
+                    <a class="dropdown-item" href="#">Trees</a>
+                    <a class="dropdown-item" href="#">Grass</a>
+                    <a class="dropdown-item" href="#">Flowers</a>
+                </div>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/water_supply">Forecast</a>
+            </li>
+
+        </ul>
+    </nav>
+    <br>
+</div>
+</body>
+</html>
