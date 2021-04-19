@@ -1,4 +1,4 @@
-package com.schkv.smarthome.web.servises;
+package com.schkv.smarthome.web.services;
 
 import org.eclipse.paho.client.mqttv3.*;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
